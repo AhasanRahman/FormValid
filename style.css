@@ -1,0 +1,18 @@
+h2{
+    text-align: center;
+}
+body{
+background-color: aquamarine;
+font-size: large;
+
+
+}
+form{
+    height: 80vh;
+    width: 60wh;
+text-align:center;
+
+}
+#btn{
+    size: 20px;
+}

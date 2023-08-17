@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> FORM VALIDATION</h2>
+
+    <div>
+        <form name="myform" onsubmit="handleSubmit(event)">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="name" id="name"><br>
+            <p id="command"> </p>
+
+            <br><br>
+            <label for="name">Fathers Name</label>
+            <input type="text" name="fname" placeholder="Father's name" id="fname">
+            <p id="fcommand"> </p>
+             <br><br>
+
+            <label for="name">Contract</label>
+            <input type="text" name="contract" id="phn" ><br>
+            <p id="pcommand"></p> 
+            
+            <br><br>
+            <label for="name">Email</label>
+            <input type="text" name="email" id="mail"><br>
+            <p id="ecommand"></p>
+            <br><br>
+            <label for="name">AGE</label>
+            <input type="text" name="age" id="ag" value=""><br>
+            <p id="acommand"></p>
+            <br><br>
+            <input type="submit" id="btn"><br><br>
+            
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
