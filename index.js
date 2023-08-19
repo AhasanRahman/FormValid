@@ -27,6 +27,7 @@ const namefunction = () => {
     if (namee.value) {
 
         if (namee.value.length > 3) {
+
             namee.style.border = "";
         document.getElementById("command").innerText = "";
             return true;
@@ -38,7 +39,7 @@ const namefunction = () => {
 
     } else {
         namee.style.border = '5px solid red';
-        document.getElementById("command").innerText = "\n --Plz Enter Valid Name";
+        document.getElementById("command").innerText = "--Plz Enter Valid Name";
 
         return false;
     }
@@ -64,7 +65,7 @@ const fnamefunction = () => {
 
     } else {
         fname.style.border = '5px solid red';
-        document.getElementById("fcommand").innerText = "\n --Plz Enter Valid Fname";
+        document.getElementById("fcommand").innerText = "--Plz Enter Valid Fname";
         return false;
     }
 }
@@ -80,9 +81,9 @@ function handlecontract() {
 
         if (isNaN(num)) {
 
-            phn.innerHTML = "\n Enter Numeric value only";
+            phn.innerHTML = " Enter Numeric value only";
 
-            alert("CONTRACT : plz enter numeric number only");
+           // alert("CONTRACT : plz enter numeric number only");
 
 
             return false;
@@ -94,8 +95,12 @@ function handlecontract() {
             return true;
         }
     } else {
+
         phn.style.border = '5px solid red';
-        document.getElementById("pcommand").innerText = "\n -Plz Enter Valid Number";
+        pcommand.style.text = '5px solid red';
+
+        document.getElementById("pcommand").innerText = " -Plz Enter Valid Number";
+
         return false;
     }
 }
@@ -104,38 +109,40 @@ function handlecontract() {
 
 function handleEmail() {
 
-    // let x = document.myform.email.value;
-    // let atposition = x.indexOf("@");
-    // let dotposition = x.lastIndexOf(".");
+    let x = document.myform.email.value;
+    let atposition = x.indexOf("@");
+    let dotposition = x.lastIndexOf(".");
 
-    // if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
+    if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
 
-    //     alert("Please enter a valid e-mail address :");
-    //     mail.style.border = '5px solid red';
-    //     document.getElementById("ecommand").innerText = "\n -Plz Enter Valid Email";
-    //     return false;
-    // }
+        //alert("Please enter a valid e-mail address :");
+        mail.style.border = '5px solid red';
+        document.getElementById("ecommand").innerText = "\n -Plz Enter Valid Email";
+        return false;
+    }
+    mail.style.border = "";
+    document.getElementById("ecommand").innerText = "";
     return true;
 }
 
+//Age validation.
 
 const ag = document.getElementById("ag");
-//Age validation.
+
 function handleage() {
 
     // let x = document.myform.age.value;
 
-
-
     if (Number(ag.value) > 18 && Number(ag.value) < 100) {
+
         ag.style.border ="";
         document.getElementById("acommand").innerText = "";
         return true;
     } else {
 
-        alert("AGE :\n plz insert Age 18+");
+        //alert("AGE :\n plz insert Age 18+");
         ag.style.border = '5px solid red';
-        document.getElementById("acommand").innerText = "\n -Plz Enter Valid age";
+        document.getElementById("acommand").innerText = "-Plz Enter Valid age";
         return false;
 
     }

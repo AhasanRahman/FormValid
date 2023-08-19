@@ -1,18 +1,38 @@
-h2{
-    text-align: center;
-}
+
 body{
-background-color: aquamarine;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+background-color:whitesmoke;
 font-size: large;
 
-
 }
-form{
-    height: 80vh;
-    width: 60wh;
-text-align:center;
-
+ 
+div{
+    text-align: center;
+    height: 800px;
+    width: 500px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:#787878;
+}
+input[type=text] {
+    font-size: large;
+    width: 50%;
+    padding: 12px 20px;
+}
+input[type=submit]{
+    font-size: large;
+    box-sizing: border-box;
+    background-color: ;
 }
 #btn{
-    size: 20px;
+    padding: 20px;
+background-color:skyblue ;
 }
+#btn:hover {
+    background-color:s4CAF50; 
+    color: white;
+  }
+ 
