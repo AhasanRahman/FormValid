@@ -27,6 +27,8 @@ const namefunction = () => {
     if (namee.value) {
 
         if (namee.value.length > 3) {
+            namee.style.border = "";
+        document.getElementById("command").innerText = "";
             return true;
 
         } else {
@@ -51,6 +53,8 @@ const fnamefunction = () => {
     if (fname.value) {
 
         if (fname.value.length > 3) {
+            fname.style.border = "";
+        document.getElementById("fcommand").innerText = "";
             return true;
 
         } else {
